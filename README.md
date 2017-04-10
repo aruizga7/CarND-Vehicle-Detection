@@ -1,6 +1,6 @@
 # Vehicle Detection Project
 
-This is a project for Udacity self-driving car Nanodegree program. The aim of this project is to detect the vehicles in a dash camera video. The implementation of the project is in the file vehicle_detection.ipynb. This implementation is able to achieve 21FPS without batching processing. The final video output is [here](https://github.com/aruizga7/CarND-Vehicle-Detection/raw/master/project_video_output.mp4).
+This is a project for Udacity self-driving car Nanodegree program. The aim of this project is to detect the vehicles in a dash camera video. The implementation of the project is in the file vehicle_detection.ipynb. This implementation is able to achieve 21FPS without batching processing. The final video output is [here](https://www.youtube.com/watch?v=PncSIx8AHTs).
 
 In this README, each step in the pipeline will be explained in details.
 
@@ -121,7 +121,7 @@ The following shows the results for several test images with a threshold of 0.17
 
 ![png](./output_images/detection_on_test_images.png)
 
-[Here](https://github.com/aruizga7/CarND-Vehicle-Detection/raw/master/project_video_output.mp4) is the result of applying the same pipeline to a video.
+[Here](https://www.youtube.com/watch?v=PncSIx8AHTs) is the result of applying the same pipeline to a video.
 
 ## Discussion
 
