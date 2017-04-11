@@ -16,6 +16,10 @@ Detecting vehicles in a video stream is an object detection problem. An object d
 
 In this project, we will use tiny-YOLO v1, since it's easy to implement and are reasonably fast.
 
+## Pre-processing the image
+
+First, I cropped just the interest region. Then sliced the image in small frames, resized it to the right size. It’s possible to define the size of the window in the image, or to resize the original image and crop a fixed window. I used this later option. 
+
 
 ## The tiny-YOLO v1
 
@@ -126,6 +130,12 @@ The following shows the results for several test images with a threshold of 0.17
 ## Discussion
 
 The YOLO is known to be fast. In the original paper, the tiny-YOLO is reported to work at nearly 200 FPS on a powerful desktop GPU. In this project, the video is processed on a Nvidia 1070 and the rate is about 21FS without batch processing.
+
+This is a very exciting result. Note that false positives are practically absent. So there is no need at all here for a heatmap, although it certainly could be used to reduce any possible false positives. I vehicle detection with YOLO type networks are an exciting direction to investigate for self-driving cars. Another direction would be to train YOLO on the Udacity training set linked to above. But these will be checked in different projects. Some false positives still remain after heatmap filtering. This should be improvable by using more labeled data.
+
+It would be possible to augment original dataset with 10000 car images and 40000 non-car images from Autti. By changing proportion of original and Autti dataset images in training samples you may fine tune classifier performance. This dataset contains of road images with labeled cars, pedestrians and other road participants. So it is needed to extract car and non-car images from original images. 
+
+
 
 
 
